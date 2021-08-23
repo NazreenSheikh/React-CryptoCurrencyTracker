@@ -28,7 +28,7 @@ setSearch(e.target.value)
      <div>
          <nav className=" flex bg-purple-200  h-12">
          <h1 className="mt-2 flex-none italic font-bold text-2xl ml-10 text-purple-900">
-                 Crypto Currency
+                 Crypto Currency Tracker
              </h1>
              <div className="justify-end container flex">
                  <h1 className="mx-5 text-black ">
