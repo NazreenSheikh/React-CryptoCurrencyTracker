@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useRef, useState }  from 'react'
 import Coin from './Coin';
+import Property from './Property';
 
 const App = () => {
     const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
@@ -25,15 +26,18 @@ setSearch(e.target.value)
     })
     return (
      <div>
-         <div>
-             <h1>
-                 Search Crypto Currency
+         <nav className=" flex bg-purple-200  h-12">
+         <h1 className="mt-2 flex-none italic font-bold text-lg  text-purple-900">
+                 Crypto Currency
              </h1>
-             <div>
-                     <input type="text" placeholder="Search" value={search} onChange={handleSearch}/>
-      </div>
-
-         </div>
+             <div className="justify-end container flex">
+                 <h1 className="mx-5 text-black ">
+                     Search Crypto-Currency
+                 </h1>
+                             <input type="text" className="bg-purple-900 placeholder-white text-white pl-1" placeholder="Search" value={search} onChange={handleSearch}/>
+             </div>
+         </nav>
+         <Property/>
          {filteredCoins.map(coin=>{
 
              return (

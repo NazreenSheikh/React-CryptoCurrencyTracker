@@ -13,27 +13,17 @@ interface coinProps{
 const Coin= ({image, name, symbol, volume,priceChange, marketcap,price}:coinProps) => {
 
     return (
-        <div>
-            <div>
-                <div>
-                    <img src={image} alt="Coin Image" />
-                    <h1>
-                        {name}
-                    </h1>
-                    <p>{symbol}</p>
-
-                </div>
-                <p>
-                    ${price}
-                </p>
-                <p>
-                    ${volume.toLocaleString()}
-                </p>
-                <p>
-                    {priceChange.toFixed(2)}
-
-                </p>
-                <p>market-cap: ${marketcap.toLocaleString()}</p>
+        <div >
+            <div  className="flex text-purple-900  h-52  ">
+                    <img src={image} alt="Coin Image" className="w-52 h-52 "/>
+                    <h1 className="ml-14">{name}</h1>
+                    <div className="container flex justify-between ml-28 ">
+                        <p>{symbol}</p>
+                        <p>${price}</p>
+                        <p>${volume.toLocaleString()}</p>
+                        <p>{priceChange.toFixed(2)}%</p>
+                        <p>${marketcap.toLocaleString()}</p>
+                    </div>
             </div>
         </div>
     )
