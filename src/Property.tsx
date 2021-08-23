@@ -2,19 +2,20 @@ import React from 'react'
 
 const Property = () => {
     return (
-        <div className="flex bg-purple-200  p-4  text-purple-900 h-16 border-t-2 border-black ">
-           <div className="w-1/4 pl-20">
-               <h1 >image</h1>
-           </div>
-            <div className="container flex  text-justify justify-between  ">
-                <h1>name</h1>
-                <h1 >symbol</h1>
-                <h1>price</h1>
-                <h1 >volume</h1>
-                <h1>diff</h1>
-                <h1 >market-cap</h1>
+        <div >
+            <div  className="flex bg-purple-200 text-purple-900 text-xl h-20 pt-6 ">
+                    <p  className="ml-24 ">Image</p>
+                    <p className="ml-28 ">name</p>
+                    {/* <div className="container flex justify-between ml-24 "> */}
+                        <p className="ml-24 ">symbol</p>
+                        <p className="ml-20 ">price</p>
+                        <p className="ml-32 ">volume</p>
+                        <p className="ml-36 ">rate</p>
+                        <p className="ml-32 ">marketcap</p>
+                    {/* </div> */}
             </div>
         </div>
+
     )
 }
 

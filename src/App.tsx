@@ -27,14 +27,14 @@ setSearch(e.target.value)
     return (
      <div>
          <nav className=" flex bg-purple-200  h-12">
-         <h1 className="mt-2 flex-none italic font-bold text-lg  text-purple-900">
+         <h1 className="mt-2 flex-none italic font-bold text-2xl ml-10 text-purple-900">
                  Crypto Currency
              </h1>
              <div className="justify-end container flex">
                  <h1 className="mx-5 text-black ">
                      Search Crypto-Currency
                  </h1>
-                             <input type="text" className="bg-purple-900 placeholder-white text-white pl-1" placeholder="Search" value={search} onChange={handleSearch}/>
+                <input type="text" className="bg-purple-900 placeholder-white text-white pl-1" placeholder="Search" value={search} onChange={handleSearch}/>
              </div>
          </nav>
          <Property/>
